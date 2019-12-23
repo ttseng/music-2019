@@ -1,0 +1,194 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Favorite Music 2019</title>
+    <meta name="description" content="My favorite books from 2018" />
+    <link
+      id="favicon"
+      rel="icon"
+      href="https://glitch.com/edit/favicon-app.ico"
+      type="image/x-icon"
+    />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- import Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display"
+      rel="stylesheet"
+    />
+
+    <!-- jQuery-->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- FontAwesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- <a href="http://last.fm/user/wrdstomakeup" target="_blank"><i class="fas fa-music"></i></a> -->
+    </header>
+
+    <main>
+      <div id="intro">
+        <div id="title">
+          <h1>
+            My favorite music of 2019
+          </h1>
+          <p class="byline">
+            by Tiffany Tseng
+          </p>
+        </div>
+      </div>
+
+      <div id="favorite-albums" class="favorites"></div>
+
+      <section>
+        <h2>
+          Songs
+        </h2>
+
+        <ul>
+          <li>Yaeji - Beach2k20 (Remix)</li>
+          <li>Tops - Seven Minutes</li>
+          <li>Destroyer - Crimson Tide</li>
+          <li>Disq - Communication</li>
+          <li>Jay Som - Crown</li>
+          <li>Corridor - Domino</li>
+          <li>Jennifer Vanilla – Space Time Motion</li>
+          <li>Homeshake – Another Thing</li>
+          <li>Lydia Ainsworth – Can You Find Her Place</li>
+          <li>Toro y Moi – Laws of the Universe</li>
+          <li>Carly Rae Jepsen – Julien</li>
+          <li>Metronomy – Lately</li>
+          <li>Julia Shapiro – Natural</li>
+          <li>Shana Cleveland – Face of the Sun</li>
+        </ul>
+
+        <a
+          href="https://open.spotify.com/playlist/6uxMS4hZXwJLPPgcErItnj?si=tQtSI2cvRy6UNDlW-wCQmw"
+          target="_blank"
+          ><b>Spotify Playlist</b></a
+        >
+      </section>
+
+      <section>
+        <h2>
+          Previous Years
+        </h2>
+        <div>
+          <a href="http://music-2018.glitch.me/" target="_blank">2018</a> |
+          <a
+            href="https://medium.com/@scientiffic/best-of-2017-f087d859a10d"
+            target="_blank"
+            >2017</a
+          >
+          |
+          <a
+            href="https://medium.com/@scientiffic/best-of-2016-132c996411e0"
+            target="_blank"
+            >2016</a
+          >
+          |
+          <a
+            href="http://eatersdigestwmbr.tumblr.com/post/133671744749/tiffs-best-music-of-2015"
+            target="_blank"
+            >2015</a
+          >
+          |
+          <a
+            href="http://eatersdigestwmbr.tumblr.com/post/104812889094/tiffs-best-music-of-2014"
+            target="_blank"
+            >2014</a
+          >
+          | <a href="http://tmblr.co/ZUcq7v12iHGYF" target="_blank">2013</a> |
+          <a href="http://tmblr.co/ZUcq7vZjpUfz" target="_blank">2012</a>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+  </body>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      loadFavorites();
+    });
+
+    function randomNum(min, max) {
+      // min and max included
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    function loadFavorites() {
+      // console.log('load favorites');
+      $.getJSON("./favorite_albums.json", function(data) {
+        // console.log("data: %O", data);
+
+        // construct album list
+        $.each(data.favorites, function(i, favorite) {
+          let left;
+          let top;
+          const introHeight = 500;
+          let zIndex = Math.floor(randomNum(1,99));
+
+          if (i === 0) {
+            left = "calc(50% - 162px)"; // each album is 325px wide
+            top = "50%";
+          } else {
+            left = `${Math.floor(randomNum(10, 50))}%`;
+            top = `${Math.floor(randomNum(10, 55))}%`;
+          }
+
+          $("#intro").append(
+            `<img class="intro-cover" style='left: ${left}; top: ${top}; z-index: ${zIndex}' src=${favorite.cover}></img>`
+          );
+
+          // construct album list
+          var title = `<div class="title">${favorite.title}</div>`;
+          var author = `<div class="author">${favorite.author}</div>`;
+          var genre = `<div class="genre">${favorite.genre}</div>`;
+          var cover = `<img class="cover" src=${favorite.cover}></img>`;
+          var review = `<div class="lyric">"${favorite.lyric}"</div>`;
+
+          var favoriteItem = `<div class='favorite'> <a href="${favorite.link}" target="_blank">${cover}</a> ${title} ${author} ${genre}  <hr align="left">  ${review} </div>`;
+          $("#favorite-albums").append(favoriteItem);
+        });
+      });
+    }
+
+    window.addEventListener("scroll", function(e) {
+      console.log("scroll");
+      const covers = $(".intro-covers");
+      $.each(covers, function(i, cover) {
+        cover.style.top = calc(cover.style.top - 5);
+      });
+    });
+  </script>
+</html>

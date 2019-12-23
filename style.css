@@ -1,0 +1,312 @@
+/* styles */
+/* called by your view template */
+
+* {
+  box-sizing: border-box;
+}
+
+h1, h2{
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+
+body {
+  font-family: 'PT Sans', sans-serif;
+  overflow-x: hidden;
+  color: black;
+  max-width: 100%;
+  font-size: 18px;
+  margin: 0;
+}
+
+a, .byline, .note{
+  color: black;
+  font-size: small;
+  text-decoration: none;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.fa-asterisk{
+  font-size: 10px;
+  position: absolute;
+  color: black;
+}
+
+h1{
+  font-size: 3em;
+  font-weight: normal;
+  margin-bottom: 1px;
+}
+
+h2 i{
+  font-size: 20px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+p {
+  max-width: 600px;
+}
+
+i{
+  color: #8c8c8c;
+  margin-left: 2px;
+  font-size: smaller;
+}
+
+
+#intro{
+  background: #7c7ca7;
+  display: block;
+  position: relative;
+  height: 100vh;
+  padding-bottom: 3em;
+  margin-bottom: 5em;
+  overflow: hidden;
+}
+
+.intro-cover{
+  height: 325px;
+  box-shadow: 5px 3px 3px #1d1d1d;
+  border-radius: 0;
+  position: absolute;
+}
+
+@media(max-width: 400px){
+  .intro-cover{
+    height: 175px;
+  }
+}
+
+
+#title{
+  position: absolute;
+  top: 40%; 
+  left: 20%;
+  z-index: 101;
+}
+
+h1{
+  color: black;
+  text-shadow: 5px 3px 3px #1d1d1d;
+  font-weight: bold;
+}
+
+#title .byline{
+  color: white;
+  font-size: initial;
+  text-shadow: 5px 3px 3px #1d1d1d;
+}
+
+#title h1{
+  color: white;
+}
+
+#intro cover{
+  width: 350px;
+}
+
+.intro-cover:first-of-type{
+  z-index: 100 !important;
+}
+
+.intro-cover:nth-child(odd){
+  animation: float-up 5s ease-in-out infinite forwards;
+}
+
+.intro-cover:nth-child(even){
+  animation: float-down 5s ease-in-out infinite forwards;
+}
+
+@keyframes float-up{
+  0%{
+    transform: translate(0,0);
+  }
+  50%{
+    transform: translate(0px, 10px);
+  }
+}
+
+@keyframes float-down{
+  0%{
+    transform: translate(0,0);
+  }
+  50%{
+    transform: translate(0px, -10px);
+  }
+}
+
+.categories{
+  margin: 20px 0px 0px;
+  line-height: 35px;
+}
+
+.categories span{
+  font-family: 'PT Sans', sans-serif;
+  background: #383838;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.categories span:hover{
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.categories span.selected{
+  background-color: teal;
+}
+
+.favorites{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.favorite{
+  width: 30%; 
+  margin: 0 1.5em 3em 1.5em;
+}
+
+.cover{
+  max-width: 100%;
+  max-width: 350px;
+  box-shadow: 5px 3px 3px #1d1d1d;
+  border-radius: 7px;
+  margin-bottom: 10px;
+}
+
+.title{
+  font-weight: bold;
+  font-size: 1.5em;
+  margin: 10px 0px;
+}
+
+.author, .year, .genre{
+  font-family: 'PT Sans', sans-serif;
+  margin: 5px 0px 10px;  
+}
+
+.genre{
+  font-style: italic;
+  font-size: small;
+}
+
+hr{
+  border-top: 1px solid #ececec;
+  width: 20%;
+  margin-bottom: 20px;
+}
+
+.lyric{
+  font-family: 'Source Serif Pro', serif;
+  text-align: unset;
+  line-height: 1.4em;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+form {
+  margin-bottom: 25px;
+  padding: 15px;
+  display: inline-block;
+  width: 100%;
+  max-width: 340px;
+  border-radius: 3px;
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+button {
+  font-size: 16px;
+  border-radius: 3px;
+  background-color: lightgrey;
+  border: 1px solid grey;
+  box-shadow: 2px 2px teal;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: yellow;
+}
+
+button:active {
+  box-shadow: none;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+footer {
+  margin-top: 50px;
+  padding-top: 25px;
+}
+
+
+ul{
+  list-style: none;
+  padding-left:0;
+}
+
+section{
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1em;
+}
+
+section h2{
+  font-weight: bold;
+}
+
+.remix-btn{
+  font-size: large; 
+  font-weight: 600;
+  padding: 5px 12px;
+  color: white;
+  background-color: #7c7ca7;
+  border-radius: 5px;
+  box-shadow: 5px 3px 3px #1d1d1d;
+  width: fit-content;
+}
+
+ @media (max-width: 400px)
+{
+  .favorite{
+    width: 100% !important;
+  }  
+}
+
+@media (max-width: 680px){
+  .favorite{
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 1230px){
+  .favorite{
+    width: 40%;
+  }
+}
+
+@media (min-width: 1230px){
+  .favorite{
+    width: 29%;
+  }
+}

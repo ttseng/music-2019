@@ -1,0 +1,109 @@
+{
+  "favorites": [
+    {
+      "title": "Purple Mountains",
+      "author": "Purple Mountains",
+      "cover": "https://f4.bcbits.com/img/a3680493089_10.jpg",
+      "genre": "indie rock",
+      "lyric": "The end of all wanting is all I've been wanting",
+      "link": "https://open.spotify.com/album/5NCdiiTgky5PbjmCtcgwtn?si=mHkbLriXQ2u9EUi_BOHs-g"
+    },
+    {
+      "title": "Quiest Signs",
+      "author": "Jessica Pratt",
+      "genre": "folk",
+      "cover": "https://t2.genius.com/unsafe/716x0/https%3A%2F%2Fimages.genius.com%2Fd17f8ebf5500559ca3ff7bdb45c6a7e5.1000x1000x1.jpg",
+      "lyric": "He's the undiscovered night",
+      "link": "https://open.spotify.com/album/00oz3t7cI3WfwS2oEIZD6x?si=OBFh_Dh4Ramy-XaTgRWzmw"
+    },
+    {
+      "title": "Charli",
+      "author": "Charli XCX",
+      "cover": "https://t2.genius.com/unsafe/716x0/https%3A%2F%2Fimages.genius.com%2Fc6bea8afb7a5969e94099d2e93089017.1000x1000x1.jpg",
+      "genre": "pop",
+      "lyric": "I go speeding on the highway vroom vrooming, might die",
+            "link": "https://open.spotify.com/album/386IqvSuljaZsMjwDGGdLj?si=DjdafJE3QxaB61ndfG6_Dg"
+    },
+    {
+      "title": "Titanic Rising",
+      "author": "Weyes Blood",
+      "cover": "https://t2.genius.com/unsafe/716x0/https%3A%2F%2Fimages.genius.com%2F45b59dcade7eff088f6b68047dd657c1.1000x1000x1.jpg",
+      "genre": "psych rock",
+      "lyric": "No one's ever gonna give you a trophy for all the pain and the things you've been through",
+            "link": "https://open.spotify.com/album/53VKICyqCf91sVkTdFrzKX?si=bmDsCh3VSCW3-bphOdTq4Q"
+    },
+    {
+      "title": "Thanks to You",
+      "author": "Rocketship",
+      "cover": "https://imagery.zoogletools.com/u/149945/e2f2a175a5d7cee6bb308e7e481cc62e97553558/large/thanks-to-you-cover-2-4000x4000.jpg",
+      "genre": "indie rock",
+      "lyric": "Life is so long",
+            "link": "https://open.spotify.com/album/2O3hEiu6IF9egyqlvk8LjR?si=b83FViBWTJ6HcgA4a-h4YA"
+    },
+    {
+      "title": "Stuffed & Ready",
+      "author": "Cherry Glazerr",
+      "cover": "https://t2.genius.com/unsafe/716x0/https%3A%2F%2Fimages.genius.com%2Fec07abd95559b0e73488609b7051f9d4.1000x1000x1.jpg",
+      "genre": "indie rock",
+      "lyric": "I'm so lucky I can breathe when the others cannot swim",
+            "link": "https://open.spotify.com/album/1EE4A8oz3gG7CZUdFj7KMh?si=xUDcyMFYTAeCp_KrOVY9JA"
+    },
+    {
+      "title": "Looking Through the Shades",
+      "author": "Glitterer",
+      "cover": "https://t2.genius.com/unsafe/716x0/https%3A%2F%2Fimages.genius.com%2F8aec7e5e3f165dcfe4efd971d2d77571.1000x1000x1.jpg",
+      "genre": "indie rock",
+      "lyric": "What's the word for when you realize time has passed?",
+            "link": "https://open.spotify.com/album/3sKBPdPT9GZhC3cHmaWEJC?si=Tlpg0m2cT5SCZ7qD2McDhg"
+      
+    },
+    {
+      "title": "Happy to Be Here",
+      "author": "Barrie",
+      "cover": "https://f4.bcbits.com/img/a2890044646_10.jpg",
+      "genre": "dream pop",
+      "lyric": "When I talk to you, when I say your name, I can't tell if I fell back asleep",
+            "link": "https://open.spotify.com/album/74hkehs2cahKJ7jFLOrxYh?si=Soz-gqTBTvu8cEfXUAmo4Q"
+    },
+    {
+      "title": "FIBS",
+      "author": "Anna Meredith",
+      "cover": "https://f4.bcbits.com/img/a1717119214_10.jpg",
+      "genre": "experimental",
+      "lyric": "You say you're dancing in the deep end, but to me, it looks like drowning",
+            "link": "https://open.spotify.com/album/1y9d61gXNTgG0rZl7d6IFj?si=qjIZfHd7QsqNVeUoDkMdrQ"
+    },
+    {
+      "title": "Waves",
+      "author": "Sofia Bolt",
+      "cover": "https://f4.bcbits.com/img/a3577159252_10.jpg",
+      "genre": "indie rock",
+      "lyric": "Yet another fucking beautiful day",
+            "link": "https://open.spotify.com/track/5HqFl9TXGYM1l8i0Ne3NKk?si=3Gic6gmVRgmNZLGq0ZC7Cw"
+    },
+    {
+      "title": "Designer",
+      "author": "Aldous Harding",
+      "cover": "https://f4.bcbits.com/img/a2455302011_10.jpg",
+      "genre": "folk",
+      "lyric": "It's better to live with melody and have an honest time",
+            "link": "https://open.spotify.com/album/0QNJa03XQeMOuQhi9izThh?si=5XlOFKf2QoCgeSQtqNyPLQ"
+    },
+    {
+      "title": "Close it Quietly",
+      "author": "Frankie Cosmos",
+      "cover": "https://f4.bcbits.com/img/a3744896027_10.jpg",
+      "genre": "indie rock",
+      "lyric": "Your eyes swing shut like an orange peel",
+            "link": "https://open.spotify.com/album/1ktNpFgxer2jAIGyiTpmvJ?si=qUKG4x1KQGSgwoBBkfYSAg"
+    },
+    {
+      "title": "Civilisation I",
+      "author": "Kero Kero Bonito",
+      "cover": "https://f4.bcbits.com/img/a3311265352_10.jpg",
+      "genre": "pop",
+      "lyric": "Make dull chaos the rule",
+            "link": "https://open.spotify.com/album/4NPyYcu2uggCCGwAq23Lej?si=c-HF01E6QBWohVcBXQ7GKQ"
+    }
+  ]
+}
